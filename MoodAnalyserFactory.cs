@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MoodAnalyser1
 {
-    internal class MoodAnalyserFactory
+    public class MoodAnalyserFactory
     {
         public object Mood_Analyser(string Class, string Constructor)
         {
@@ -77,6 +77,5 @@ namespace MoodAnalyser1
                 throw new CustomException(CustomException.ExceptionType.NO_SUCH_METHOD, "Can't Found This Method");
             }
         }
-
     }
 }
