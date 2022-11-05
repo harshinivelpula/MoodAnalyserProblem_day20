@@ -8,6 +8,32 @@ namespace MoodAnalyser1
 {
     internal class CustomException : Exception
     {
+        //public enum Mood
+        //{
+        //    Empty,
+        //    Null
+        //}
+
+        //public readonly Mood Minfo;
+
+        //public CustomException(Mood minfo, string info) : base(info)
+        //{
+        //    this.Minfo = minfo;
+        //}
+
+
+
+        //ExceptionType type;
+        //public enum ExceptionType
+        //{
+        //    NULL, EMPTY, NO_SUCH_CLASS, NO_SUCH_CONSTRUCTOR, NO_SUCH_METHOD
+        //}
+        //public CustomException(ExceptionType type, string message) : base(message)
+        //{
+        //    this.type = type;
+        //}
+
+
         public enum Mood
         {
             Empty,
@@ -19,18 +45,6 @@ namespace MoodAnalyser1
         public CustomException(Mood minfo, string info) : base(info)
         {
             this.Minfo = minfo;
-        }
-
-
-       
-        ExceptionType type;
-        public enum ExceptionType
-        {
-            NULL, EMPTY, NO_SUCH_CLASS, NO_SUCH_CONSTRUCTOR, NO_SUCH_METHOD
-        }
-        public CustomException(ExceptionType type, string message) : base(message)
-        {
-            this.type = type;
         }
     }
 }
